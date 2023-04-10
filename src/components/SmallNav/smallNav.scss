@@ -1,0 +1,36 @@
+@import '../../App.scss';
+.small-nav {
+    background: $bone;
+    width: max-content;
+    display: block;
+    padding: 0.5rem 1.7rem;
+    z-index:2;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    display: flex;
+    gap: 0.8rem;
+    box-shadow: 1px 1px 10px $black;
+    border-radius: 3rem;
+    backdrop-filter: blur(15px);
+
+    a[href] {
+        background: transparent;
+        padding: 0.6rem;
+        border-radius: 50%;
+        display: flex;
+        color: $black;
+
+        &:hover {
+            background-color: $black;
+            color:$bone;
+        }
+    }
+
+    a.active {
+        background-color: $black;
+        color:$bone;
+    }
+}
+

@@ -1,0 +1,73 @@
+@import '../../App.scss';
+
+.contact__container {
+    background-color: $container-bg;
+    border-radius: 10px;
+
+    @include mobile {
+        width: $container-width-sm;
+    }
+}
+.contact__options {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+
+    @include tab-and-mobile {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact__option {
+        border: 1px solid $bone;
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: $transition;
+
+        &:hover {
+            background-color: $bone;
+            color: $black;
+        }
+
+        &-icon {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            margin-top: 0.4rem;
+            display: inline-block;
+            font-size: 0.7rem;
+            color: green;
+            padding: 5px;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        font-family: 'Poppins';
+        color: $bone;
+
+        @include tab-and-mobile {
+            align-items: center;
+        }
+    
+        input, textarea {
+            width: 100%;
+            padding: 1.2rem;
+            border-radius: 10px;
+            background: transparent;
+            border: 1px solid $bone;
+            resize: none;
+            color: white;
+        }
+    }    
+}
+
+

@@ -1,0 +1,84 @@
+@import "../../App.scss";
+
+.experience__container {
+    width: $container-width-md;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.experience__description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 90%;
+
+    @include tab {
+        grid-template-columns: 1fr;
+    }
+
+    @include mobile {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    &-item {
+        background: $container-bg;
+        border: 1px solid $container-bg;
+        padding: 2.4rem 5rem;
+        border-radius: 10px;
+        transition: $transition;
+
+        @include tab {
+            width: 80%;
+            padding: 2rem;
+            margin: 0 auto;
+        }
+
+        @include mobile {
+            padding: 2rem 1rem;
+        }
+        
+
+        &:hover {
+            border: 1px solid $bone;
+            background-color: $black;
+            color: $bone;
+        }
+
+        h3 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .experience__content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+
+            @include tab-and-mobile {
+                padding: 0;
+                gap: 1rem;
+            }
+
+            .experience__details {
+                display: flex;
+                align-items: flex-start;
+                gap: 1rem;
+
+                .experience__icon {
+                    margin-top: 6px;
+                }
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

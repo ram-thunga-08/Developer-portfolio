@@ -1,0 +1,23 @@
+@import '../../App.scss';
+.sidebar {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-right: 40px;
+
+    .social-media-icons {
+        font-size: 24px;
+
+        svg {
+            color: $bone;
+            transition: $transition;
+            padding: 0.7rem;
+            border-radius: 50px;
+
+            &:hover {
+                color: $black;
+                background-color: $bone;
+            }
+        }
+    }
+}

@@ -1,0 +1,115 @@
+@import "../../App.scss";
+
+.about-container {
+    border: 1px $black solid;
+    border-radius: 10px;
+    background: $container-bg;
+}
+.container {
+    padding: 10px 100px 50px;
+
+    p {
+        color: $bone;
+        text-align: justify;
+    }
+
+    .about-me-section {
+        margin-top: 20px;
+        display: flex;
+        grid-gap: 100px;
+        color:$bone;
+
+        @include mobile {
+            grid-gap: 20px;
+        }
+
+        .about-me-pic {
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+            img {
+                width: 300px;
+                height: 300px;
+                border-radius: 10px;
+            }
+        }
+        .about-me-description {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            grid-gap: 30px;
+            color: $bone;
+
+            .about__cards {
+                display: flex;
+                grid-gap: 20px;
+
+                .about__card {
+                    border: 1px $bone solid;
+                    width: 140px;
+                    border-radius: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    padding: 20px;
+
+                    &:hover {
+                        background-color: $bone;
+                        color: $black;
+                        transition: $transition;
+                    }
+
+                    .about__card-icon {
+                        margin-bottom: 15px;
+                    }
+
+                    small {
+                        font-size: 0.7rem;
+                        margin-top: 4px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+/* ============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
+@include tab-and-mobile {
+    .container {
+        .about-me-section {
+            flex-direction: column;
+            align-items: center;
+
+            .about-me-pic {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .about-me-description {
+                width: 100%;
+                align-items: center;
+            }
+        }
+
+    }
+   
+}
+
+/* ============== MEDIA QUERIES (SMALL DEVICES) =============== */
+@include mobile {
+    .container {
+        padding: 10px 20px 50px;
+    }
+}
+
+@keyframes shadow {
+    from {
+        box-shadow: 0;
+    }
+    to {
+        box-shadow: 10px 10px 2px 1px $bone;
+    }
+}

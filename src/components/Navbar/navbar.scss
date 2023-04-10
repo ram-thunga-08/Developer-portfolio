@@ -1,0 +1,46 @@
+@import '../../App.scss';
+.nav-bar {
+    width: 100%;
+    position: relative;
+    margin: 30px auto;
+    top: 0;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+
+
+    .logo {
+        display: block;
+        margin: 20px 20px;
+
+        span {
+            font-family: 'Poppins';
+            color: $bone;
+            border: 1px $bone solid;
+            padding: 5px;
+        }
+
+        img {
+            display: block;
+            width: 100px;
+            height: 100px;
+            height: auto;
+            filter: invert(1);
+        }
+    }
+
+    nav {
+        display: flex;
+        grid-gap: 60px;
+        justify-content: center;
+        align-items: center;
+        padding-right: 40px;
+    }
+
+    .scroll-down {
+        position: absolute;
+        right: 0;
+        top: 180px;
+        transform: rotate(90deg);
+    }
+}
