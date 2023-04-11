@@ -48,7 +48,7 @@ const Waves = () =>{
 
             {/* <!--Content before waves--> */}
                 <div className="container inner-header flex-centered" style={{transform: `translateY(${ offsetY * 0.5}px)`}}>
-                    <h1>RAM THUNGA</h1>
+                    <h1>RAM TUNGA</h1>
                     <h4>Software Developer</h4>
                 </div>
             {/* <!--Hexagons Container--> */}
