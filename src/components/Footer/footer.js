@@ -15,7 +15,7 @@ const Footer = () => {
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div className="footer__socials">
-        <a href="hwww.linkedin.com/in/rama-t-799a78256"><FontAwesomeIcon icon={faLinkedin}/></a>
+        <a href="https://linkedin.com/in/rama-t-799a78256"><FontAwesomeIcon icon={faLinkedin}/></a>
         {/* <a href="https://www.instagram.com/"><FontAwesomeIcon icon={faInstagram}/></a>
         <a href="https://twitter.com/"><FontAwesomeIcon icon={faTwitter}/></a> */}
       </div>

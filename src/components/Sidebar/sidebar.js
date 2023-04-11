@@ -8,7 +8,7 @@ const Sidebar = () => {
             <ul className='sidebar'>
                 <li>
                     <a 
-                        href="www.linkedin.com/in/rama-t-799a78256" 
+                        href="https://linkedin.com/in/rama-t-799a78256" 
                         target="_blank" 
                         rel='noreferrer'
                         className='social-media-icons'>
