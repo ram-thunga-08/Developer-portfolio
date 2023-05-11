@@ -19,7 +19,7 @@ const About = () => {
                         <article className="about__card">
                             <BsAward className="about__card-icon"/>
                             <h5>Experience</h5>
-                            <small>6+ Years Working</small>
+                            <small>7+ Years Working</small>
                         </article>
                         <article className="about__card">
                             <VscFolderLibrary className="about__card-icon"/>
